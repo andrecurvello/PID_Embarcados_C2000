@@ -1,0 +1,1 @@
+"./f2802x_headers/source/F2802x_GlobalVariableDefs.obj" "./main.obj" "./PID.obj" "../F28027.cmd" "../F2802x_Headers_nonBIOS.cmd" -l"libc.a" 
