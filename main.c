@@ -334,7 +334,7 @@ __interrupt void vTimerIsr(void)
 	xMeuPID.PID_vComputaNovo(&xMeuPID.xParamPID, (int32_t)dSensor );
 
 	//COloca valor no Epwm e escala:
-	//EPwm2Regs.CMPA.half.CMPA = 10;//(int16_t)(512 + (xMeuPID.xParamPID.lSaida[0] >> 7));
+	EPwm2Regs.CMPA.half.CMPA = 10;//(int16_t)(512 + (xMeuPID.xParamPID.lSaida[0] >> 7));
 
 	//Atualiza historico:
 	xMeuPID.PID_vAtualizaHistorico(&xMeuPID.xParamPID);
